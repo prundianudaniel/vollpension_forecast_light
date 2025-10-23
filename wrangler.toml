@@ -1,0 +1,23 @@
+name = "vollpension-forecast-light"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# KV Namespaces for data storage
+[[kv_namespaces]]
+binding = "MONTHLY_REVENUE_KV"
+id = "monthly_revenue_kv"
+
+# CORS configuration for frontend
+[env.development]
+name = "vollpension-forecast-light-dev"
+
+[[env.development.kv_namespaces]]
+binding = "MONTHLY_REVENUE_KV"
+id = "monthly_revenue_kv_dev"
+
+[env.production]
+name = "vollpension-forecast-light-prod"
+
+[[env.production.kv_namespaces]]
+binding = "MONTHLY_REVENUE_KV"
+id = "monthly_revenue_kv_prod"

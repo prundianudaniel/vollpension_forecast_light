@@ -1,0 +1,12 @@
+---
+import Layout from '../components/Layout.astro';
+import LiquidityForecastRefactored from '../components/LiquidityForecastRefactored';
+---
+
+<Layout title="Vollpension Forecast">
+  <main class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div class="container mx-auto px-6 py-16">
+      <LiquidityForecastRefactored client:load />
+    </div>
+  </main>
+</Layout>
